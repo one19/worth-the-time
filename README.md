@@ -1,5 +1,7 @@
 # @BRIGHTSOLE/worth-the-time
 
+[gh-pages](https://one19.github.io/worth-the-time/)
+
 ### What is it?
 Little static site dynamically calculates this: https://xkcd.com/1205/
 

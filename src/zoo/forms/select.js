@@ -9,10 +9,12 @@ const Select = ({ onChange, options }) => (
 
 Select.propTypes = {
   onChange: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf({
-    name: PropTypes.string.isRequired,
-    value: PropTypes.number.isRequired,
-  }).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
 
 export default field()(Select);
